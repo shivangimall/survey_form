@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "stylesheet" href = "ui.css">
+  <title>Survey Form</title>
+</head>
+<body>
+<div>
+    <header>
+      <h1 id = "title">Resturant Survey Form</h1>
+      <p id = "description">Please let us know the quality of service provided by us.</p>
+    </header>
+   <form id = "survey-form">
+    
+    <div class="form-group">
+       <label id="date-label" for="date">Date of Visit</label>
+      <input
+        type="date"
+        name="date"
+        id="date"
+        class="form-control"
+        placeholder="Visited Date"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="food-label" for="email">Resturant-Food</label>
+      <select id = "dropdown">
+        <option value = "Excellent">Excellent</option>
+        <option value = "Good">Good</option>
+        <option value = "Fair">Fair</option>
+        <option value = "Poor">poor</option>
+      </select>
+    </div>
+    <div class="form-group">
+         <label>What brought you in today?</label>
+      
+       <label> <input
+          name="user-recommend"
+          value="social media"
+          type="radio"
+          class="input-radio"
+          checked
+        />Social Media</label>
+      
+       <label> <input
+          name="user-recommend"
+          value="Advertisment"
+          type="radio"
+          class="input-radio"
+        />Advertisment</label>
+
+      
+       <label> <input
+          name="user-recommend"
+          value="Location"
+          type="radio"
+          class="input-radio"
+        />Location</label>
+      <label><input
+          name="user-recommend"
+          value="Other"
+          type="radio"
+          class="input-radio"
+        />Other</label>
+       <div class="form-group">
+      <label>
+        How is the dinning room(s), decor, lighting,music and overall ambience? 
+      </label>
+
+      <label><input
+          name="prefer"
+          value = "Excellent"
+          type="checkbox"
+          class="input-checkbox"
+        />Excellent</label>
+      
+        <label><input
+          name="prefer"
+          value = "Good"
+          type="checkbox"
+          class="input-checkbox"
+        />Good</label>
+        <label><input
+          name="prefer"
+          value = "Average"
+          type="checkbox"
+          class="input-checkbox"
+        />Average</label>
+        <label><input
+          name="prefer"
+          value = "Dissatisfied"
+          type="checkbox"
+          class="input-checkbox"
+                      />Dissatisfied</label> </div>
+        <div class="form-group">
+      <label>
+        Speed of Service
+      </label>
+      <label>
+      <input
+          name="prefer"
+          value = "Excellent"
+          type="checkbox"
+          class="input-checkbox"
+        />Excellent</label>
+        <label>
+        <input
+          name="prefer"
+          value = "Good"
+          type="checkbox"
+          class="input-checkbox"
+        />Good</label>
+         <label>
+          <input
+          name="prefer"
+          value = "Average"
+          type="checkbox"
+          class="input-checkbox"
+        />Average</label>
+         <label>
+          <input
+          name="prefer"
+          value = "Dissatisfied"
+          type="checkbox"
+          class="input-checkbox"
+                 />Dissatisfied</label> </div>
+       <div class="form-group">
+         <label>Washrooms properly clean and maintained?</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="social media"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Advertisment"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+      <div class="form-group">
+      <label>Any comments or suggestions?</label>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div>
+      <h2> Personal info</h2>
+      <p> Your information is valuable to us. It will not be reveal out.</p>
+    </div>
+       
+    </div>
+
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+      
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div >
+  <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+      
+    <div>
+    <p id = "last"> Your Feedback is appreciated. It will help us to improve our service and provide you better service ahead.</p>
+    <h3 id = "last"> Thank You Very Much!</h3>
+  </div>
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    
+   </form>
+</div>
+</body>
+</html>
